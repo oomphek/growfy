@@ -332,6 +332,7 @@ gap: 32px;
 .help {
     display: flex;
     column-gap: 64px;
+    margin-bottom: 192px;
 }
 .help_left {
     display: grid;
@@ -417,4 +418,78 @@ color: #9C9C9C;
         
     }
     
+}
+
+.static {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    column-gap: 32.22px;
+    
+}
+
+.static_left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    gap: 32px;
+}
+
+.static_box {
+    padding: 40px;
+width: 358.39px;
+height: 278px;
+background: rgba(129, 129, 139, 0.1);
+border-radius: 30px;
+}
+.static_number {
+    font-weight: 500;
+    font-size: 51.2px;
+    line-height: 61px;
+    /* or 120% */
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+} 
+.static_text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #9C9C9C;
+}
+.static_right {
+padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .static_right {
+        margin-left: 100px;
+    }
+    .static_left {
+        margin-left: -50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .static_right {
+        margin-left: 100px;
+    }
+    .static_left {
+        margin-left: -50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .static_right {
+        margin-left: 100px;
+    }
+    .static_left {
+        margin-left: -50px;
+    }
 }
